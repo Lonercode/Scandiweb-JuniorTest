@@ -9,7 +9,7 @@ use App\Classes\FurnClass;
 use App\Controllers\PracController;
 
 if ($url == '/') {
-    require __DIR__ . '/Vendor/autoload.php';
+    require __DIR__ . '/vendor/autoload.php';
 
     $connecting = new Connection;
     $connecting->connect();
