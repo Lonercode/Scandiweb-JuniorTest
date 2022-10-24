@@ -51,16 +51,11 @@
 				<p><?php echo $n->weight();
 						; ?>
 				</p>
-				<div class="oneLine">
-					<span>
-						<span><?php echo $n->height(); ?>
-						</span>
-						<span><?php echo $n->width(); ?>
-						</span>
-						<span><?php echo $n->length(); ?>
-						</span>
-					</span>
-				</div>
+
+				<p><?php echo $n->dimensions(); ?>
+				</p>
+
+
 
 
 			</div>
