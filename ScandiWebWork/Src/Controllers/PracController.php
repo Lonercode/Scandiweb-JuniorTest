@@ -62,22 +62,14 @@ class PickDTO
         return $this->weight;
     }
 
-    public function height()
+    public function dimensions()
     {
         global $post;
-        return $this->height;
-    }
-
-    public function width()
-    {
-        global $post;
-        return $this->width;
-    }
-
-    public function length()
-    {
-        global $post;
-        return $this->length;
+        if (!empty($this->height)) {
+            return 'Dimensions: ' . $this->height . ' x ' . $this->width . ' x ' . $this->length;
+        } else {
+            return '';
+        }
     }
 }
 {
